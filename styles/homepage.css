@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #e60000;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 60px 20px 40px;
+    text-align: center;
+}
+
+.menu__btn {
+   display: none;
+}
+
+.logo .icon {
+    width: 50%;
+    min-width: 240px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+}
+
+.message {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 70px auto;
+}
+
+.message p:first-child {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.privacy {
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.privacy:hover {
+    text-decoration: underline;
+}
+
+.wing-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: auto;
+}
+
+@media (max-width: 680px) {
+
+    .menu__btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .menu__btn span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .message {
+        max-width: 230px;
+        margin: 20px auto;
+    }
+
+    .privacy {
+        right: 140px;
+    }
+
+    .wing-image {
+        width: 120px;
+    }
+}
